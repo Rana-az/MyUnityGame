@@ -5,6 +5,7 @@ public class MineScript : MonoBehaviour
     // test change
 
     public Rigidbody2D myRigidbody;
+    public float flapStrength;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,7 +17,7 @@ public class MineScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            myRigidbody.linearVelocity = Vector2.up * 6;
+            myRigidbody.linearVelocity = Vector2.up * flapStrength;
         } 
     }
 } 
